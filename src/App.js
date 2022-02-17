@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import pokemon from './pokemons.json'
+console.log(pokemon)
 
 function App() {
   return (
