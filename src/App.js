@@ -1,26 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-import pokemon from './pokemons.json'
-console.log(pokemon)
+import pokemons from './img/pokemons.json'
+import HeaderComponent from './components/HeaderComponent/HeaderComponent';
+import React from 'react'
+import PokemonList from './components/LoadPokemons/PokemonList'
 
 function App() {
+  const [language, setLanguage] = React.useState("fr");
+  const [research, setReasearch] = React.useState(pokemons);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HeaderComponent language={language} setLanguage={setLanguage} setResearch={setReasearch} research={research}/>
+      <PokemonList language={language} research={research}/>
+    </>
   );
 }
 

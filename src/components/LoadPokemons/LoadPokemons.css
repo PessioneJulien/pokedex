@@ -1,0 +1,80 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+.cards * {
+    padding: 0;
+    margin: 0;
+}
+.cards > div {
+    width: 200px;
+    height: 200px;
+    border: solid 1px;
+    margin: 10px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+.cards > div  p:first-child {
+    align-self: flex-start;
+}
+.cards > div > div {
+    display: flex;
+}
+.cards .type{
+    margin: 5px;
+    padding: 2px;
+    color: aliceblue;
+    border-radius: 5px;
+}
+.cards .type.poison{
+    background: mediumpurple;
+}
+.cards .type.grass{
+    background: greenyellow;
+}
+.cards .type.fire{
+    background: orangered;
+}
+.cards .type.flying{
+    background: dodgerblue;
+}
+.cards .type.water{
+    background: blue;
+}
+.cards .type.bug{
+    background: brown;
+}
+.cards .type.normal{
+    background: gray;
+}
+.cards .type.ground{
+    background: saddlebrown;
+}
+.cards .type.fairy{
+    background: hotpink;
+}
+.cards .type.psychic{
+    background: yellow;
+}
+.cards .type.fighting{
+    background: black;
+}
+.cards .type.rock{
+    background: darkolivegreen;
+}
+.cards .type.steel{
+    background: lightgray;
+}
+.cards .type.electric{
+    background: yellow;
+}
+.cards .type.ice{
+    background: white;
+    color: black;
+}
